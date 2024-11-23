@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+/* font-family: "Manrope", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+/* font-family: "Lobster", sans-serif; */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(30, 22, 137);
+}
+
+.logo{
+    height: 50px;
+    width: 70px;
+}
+
+.logo img{
+    height: 100%;
+    width: 100%;
+    border-radius: 6px ;
+}
+
+.navbar{
+    width:100%;
+}
+
+.navbar ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar li{
+    margin: 5px;
+    padding: 2px;
+   
+}
+
+.navbar li > a{
+    text-decoration: none;
+    color: rgb(233, 241, 244);
+    font-size: 1.3rem;
+    margin: 5px;
+    padding: 2px;
+    font-family: "Manrope", sans-serif;
+    position: relative;
+}
+
+a::after{
+    content: '';
+    background-color: rgb(32, 70, 153);
+    height: 2px;
+    width: 0px;
+    position: absolute;
+    bottom: 0px;
+    left:0px;
+    transition: 3s;
+}
+
+a::before{
+    content: '';
+    background-color:rgb(185, 80, 35) ;
+    height: 2px;
+    width:0px;
+    position: absolute;
+    top:0px;
+    left:0px;
+    transition: 1s;
+}
+a:hover::after,a:hover::before{
+    width: 100%;
+}
+
+@media all and (max-width:698px){
+    .header{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+.two{
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid black; */
+    /* width: 200px; */
+
+}
+
+.box1{
+    border: 1px solid black;
+    width: 200px;
+    padding: 10px;
+    margin-top: 30px;
+    text-align: center;
+    font-family: "Lobster", sans-serif;
+    box-shadow: 5px 5px rgb(83, 74, 57) ;
+    background-color: orangered;
+}
+
+.s{
+    display: flex;
+    justify-content: center;
+}
+
+.s1{
+    margin-top: 100px;
+    border-collapse: collapse;
+    box-shadow: 4px 4px blue;
+    border: none;
+}
+
+tr{
+    /* margin: 30px;
+    padding: 50px; */
+    text-align: center;
+}
+td{
+    margin: 30px;
+    padding: 15px;
+}
+tr:nth-child(odd){
+    background-color: grey;
+}
